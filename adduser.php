@@ -33,7 +33,7 @@ require_once(dirname(__FILE__) . "/../inc/load.php");
 	$options = array('cost' => 12);
 	$newHash = password_hash($CIPHER, PASSWORD_BCRYPT, $options);
 
-        $user = new User(null, $username, $email, $newHash, $newSalt, 1, 1, 0, time(), 3600, $group->getId(), 0, "", "", "", "");
+        $user = new User(null, $username, $email, $newHash, $newSalt, 1, 0, 1, 0, time(), 3600, $group->getId(), 0, "", "", "", "");
         Factory::getUserFactory()->save($user);
         
         // create default group
