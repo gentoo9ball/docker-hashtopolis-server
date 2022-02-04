@@ -5,7 +5,7 @@ RUN	export DEBIAN_FRONTEND=noninteractive && \
 	apt update && \
 	apt -y upgrade && \
 	apt -y install apache2 libapache2-mod-php php-mysql php php-gd php-pear php-curl git pwgen mariadb-client && \
-	apt -y install gcc make autoconf libc-dev pkg-config libmcrypt-dev php7.2-dev && \
+	apt -y install gcc make autoconf libc-dev pkg-config libmcrypt-dev php7.2-dev php-ldap && \
 	pecl install mcrypt-1.0.1 && \
 	echo 'extension=mcrypt.so' >> /etc/php/7.2/apache2/php.ini && \
 	cd /var/www/ && \
