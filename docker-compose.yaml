@@ -10,7 +10,7 @@ services:
       MYSQL_ROOT_PASSWORD: verySecret
 
   hashtopolis:
-    image: kpeiruza/hashtopolis:latest
+    build: .
     environment:
       H8_USER: root
       H8_PASS: verySecret
