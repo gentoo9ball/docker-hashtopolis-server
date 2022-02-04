@@ -10,7 +10,7 @@ RUN	export DEBIAN_FRONTEND=noninteractive && \
 	echo 'extension=mcrypt.so' >> /etc/php/7.2/apache2/php.ini && \
 	cd /var/www/ && \
 	rm -f html/index.html && \
-	git clone https://github.com/gentoo9ball/hashtopolis-server.git && \
+	git clone https://github.com/gentoo9ball/hashtopolis-server.git hashtopolis && \
 	mv hashtopolis/src/* html/ && \
 	mv /var/www/html/inc /var/www && \
 	mkdir /var/www/html/inc && \
