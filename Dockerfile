@@ -1,5 +1,5 @@
 FROM ubuntu:18.04
-MAINTAINER Kenneth Peiruza <kenneth@floss.cat>
+MAINTAINER Gentoo9ball <gentoo9ball@gmail.com>
 
 RUN	export DEBIAN_FRONTEND=noninteractive && \
 	apt update && \
